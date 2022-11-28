@@ -1,0 +1,55 @@
+* { 
+    box-sizing: border-box; 
+}
+header, footer { 
+    width: 100%; 
+    border: 3px solid black; 
+    clear: both; 
+}
+.one {  
+    border: 3px solid black; 
+    float: left; 
+}
+.two { 
+    border: 3px solid black; 
+    float: left; 
+}
+.three, .four { 
+    border: 3px solid black; 
+    float: left; 
+}
+@media screen and (max-width: 379px) { 
+    header, footer { 
+        height: 50px; 
+    }
+    .one, .two, .three, .four { 
+        height: 150px; 
+        width: 100%; 
+    }
+}
+@media (min-width: 380px) and (max-width: 760px) { 
+    header, footer { 
+        height: 75px; 
+    }
+    .one, .two, .three, .four {
+        height: 220px; 
+        width: 50%; 
+    }
+}
+@media (min-width: 761px) { 
+    header,footer { 
+        height: 100px; 
+    }
+    .one { 
+        height: 300px; 
+        width: 21%; 
+    }
+    .two { 
+        height: 300px; 
+        width: 39%; 
+    }
+    .three, .four { 
+        height: 300px; 
+        width: 20%
+    }
+}
